@@ -4,7 +4,7 @@ from torchvision import transforms, utils
 from torchvision.io import read_image
 from torchvision.io.image import ImageReadMode
 from torch.utils.data import Dataset
-import albumentations as A
+#import albumentations as A
 import numpy as np
 import torch
 import torch.nn.functional as F
@@ -35,7 +35,7 @@ class nuclei_dataset(Dataset):
 
         self.images = glob(os.path.join(self.data_dir, "images/*.{}".format(img_ext)))
         self.masks = glob(os.path.join(self.data_dir, "masks/*.{}".format(img_ext)))
-
+        #print(self.data_dir, len(self.images), len(self.masks))
         assert(len(self.images) == len(self.masks))
 
         self.images.sort()

@@ -5,13 +5,13 @@ transforms: none
 dataset:
   class_name: "nuclei_dataset"
   input_size: 224
-  data_dir: "/home/gmahalingam/My.Explorations/datasets/data-science-bowl-2018/data"
+  data_dir: "/home/azureuser/cloudfiles/code/Users/gmahalingam/mycontainers/blobstorage-nuclei/data"
   training:
     params:
-      data_dir: "/home/gmahalingam/My.Explorations/datasets/data-science-bowl-2018/data"
+      data_dir: "/home/azureuser/cloudfiles/code/Users/gmahalingam/mycontainers/blobstorage-nuclei/data"
   validation:
     params:
-      data_dir: "/home/gmahalingam/My.Explorations/datasets/data-science-bowl-2018/data"
+      data_dir: "/home/azureuser/cloudfiles/code/Users/gmahalingam/mycontainers/blobstorage-nuclei/data"
   number_classes: 2
 data_loader:
   train: 
@@ -42,7 +42,7 @@ training:
     patience: 10
   epochs: 100
 model:
-  save_dir: '/home/gmahalingam/My.Explorations/unets/saved_models/nuclei2018_denseunet'
+  save_dir: '/home/azureuser/cloudfiles/code/Users/gmahalingam/My.Explorations/unet_image_segmentation/saved_models/nuclei2018_denseunet_v1'
   load_weights: false
   name: "DenseUNet"
   params: 
